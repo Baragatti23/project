@@ -1,0 +1,349 @@
+.index--header{
+    background-color: #fff !important;
+    backdrop-filter: blur(0px) !important;
+}
+.Perfil--barTop{
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    background-color: #0d0c22;
+    display: flex;
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    user-select: none;
+}
+.Perfil{
+    padding-top: var(--header);
+}
+.Perfil--barTop u{
+    color: #15ccff;
+}
+._wrapperProfile_{
+    width: 878px;
+    margin: 50px auto;
+}
+.Perfil--header{
+    display: flex;
+}
+.Perfil--header--user{
+    display: flex;
+    --size: 50px;
+}
+.Perfil--header--user-img,
+.Perfil--header--user-img img,
+.Perfil--main--changePhoto-img,
+.Perfil--main--changePhoto-img img{
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+}
+.Perfil--header--user-img,
+.Perfil--main--changePhoto-img{
+    box-shadow: 0 0 0 3px white, 0 0 0 5px rgba(0,0,0,.075);
+    background-color: rgb(182, 5, 182);
+    display: flex;
+    font-size: 27px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.Perfil--header--user-info{
+    padding-left: 20px;
+}
+.Perfil--header--user-info h1{
+    font-size: 19px;
+    /* font-weight: normal; */
+}
+.Perfil--header--user-info ._slasher_{
+    font-size: 22px;
+    font-weight: normal;
+    color: #dbdbde;
+    margin: 0 2px;
+}
+.Perfil--header--user-info p{
+    display: inline-block;
+    color: #6e6d7a;
+    margin-top: 8px;
+    font-size: 14px;
+}
+.Perfil--body{
+    display: flex;
+    --menu: 200px;
+    margin-top: 40px;
+}
+.Perfil--body--menu{
+    width: var(--menu);
+}
+.Perfil--body--menu a{
+    margin: 7px 0;
+    padding: 7px 0;
+    display: block;
+    color: rgb(110, 109, 122);
+    font-size: 15px;
+}
+.Perfil--body--menu li._active_ a{
+    color: rgb(13, 12, 34);
+    font-weight: bold;
+}
+.Perfil--body--menu li._active_ a::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid currentColor;
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg);
+    border-bottom-right-radius: 3px;
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+}
+.Perfil--body--main{
+    width: calc(100% - var(--menu));
+    padding-left: 40px;
+}
+.Perfil--body--main--changePhoto{
+    display: flex;
+    --size: 80px;
+    align-items: center;
+}
+.Perfil--main--changePhoto-img{
+    margin-right: 30px;
+    font-size: 43px;
+    cursor: default;
+}
+.Perfil--main--changePhoto-btnUpload,
+.Perfil--main--changePhoto-btnDelete,
+.Perfil--body--main--form-inputSubmit input{
+    display: inline-flex;
+    position: relative;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 16px;
+    transition: color 200ms ease;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #ea4c89;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    appearance: none;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fff;
+    margin-right: 15px;
+    transition: all .3s ease;
+}
+.Perfil--main--changePhoto-btnUpload:hover,
+.Perfil--body--main--form-inputSubmit input:hover{
+    box-shadow: 0 0 0 2px white, 0 0 0 5px #ea4c89;
+}
+.Perfil--main--changePhoto-btnDelete{
+    background-color: rgb(243, 244, 244);
+    color: rgb(13, 12, 34);
+}
+.Perfil--main--changePhoto-btnDelete:hover{
+    background-color: rgb(231, 231, 233);
+}
+.Perfil--body--main--form-inputGroup{
+    position: relative;
+    margin-bottom: 40px;
+}
+.Perfil--body--main--form{
+    margin-top: 40px;
+}
+.Perfil--body--main--form-inputGroup input,
+.Perfil--body--main--form-inputGroup textarea{
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(243, 243, 244);
+    border-radius: 8px;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    color: rgb(13, 12, 34);
+    align-items: center;
+}
+.Perfil--body--main--form-inputGroup input:hover,
+.Perfil--body--main--form-inputGroup textarea:hover,
+.Perfil--body--main--form-inputGroup input:focus,
+.Perfil--body--main--form-inputGroup textarea:focus{
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    background-color: #fff;
+    border-color: rgba(0,0,0,.1);
+}
+.Perfil--body--main--form-inputGroup textarea{
+    height: 108px;
+    resize: none;
+    overflow: hidden;
+}
+.Perfil--body--main--form-inputGroup label,
+.Perfil--body--main--form-radioGroup h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    line-height: 20px;
+    color: rgb(13, 12, 34);
+}
+.Perfil--body--main--form-inputGroup label span{
+    color: #ff5555;
+    font-weight: bold;
+    margin-left: 1px;
+    font-size: 17px;
+    position: relative;
+    top: 1px;
+}
+.Perfil--body--main--form-inputGroup label b{
+    float: right;
+    color: rgba(13, 12, 34,.5);
+    font-size: 13px;
+    font-weight: normal;
+}
+.Perfil--body--main--form-inputGroup p{
+    color: rgb(158, 158, 167);
+    font-size: 14px;
+    margin-top: 8px;
+}
+.Perfil--body--main--form section{
+    margin-top: 20px;
+}
+.Perfil--body--main--form h2{
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(0,0,0,.05);
+    font-weight: bold;
+    color: rgb(110, 109, 122);
+    margin-bottom: 30px;
+}
+.Perfil--body--main--form-radioGroup{
+    margin-bottom: 30px;
+}
+.Perfil--body--main--form-radioGroup input{
+    display: none;
+}
+.Perfil--body--main--form-radioGroup label{
+    margin-right: 40px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(110, 109, 122);
+}
+.Perfil--body--main--form-radioGroup label::before,
+.Perfil--body--main--form-radioGroup label::after{
+    content: "";
+    --size: 13px;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-flex;
+    border: 1px solid rgb(110, 109, 122);
+    position: relative;
+    top: -1px;
+}
+.Perfil--body--main--form-radioGroup label::after{
+    --size: 7px;
+    background-color: white;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    border: none;
+}
+.Perfil--body--main--form-radioGroup input:checked + label::before{
+    background-color: #ea4c89;
+    border-color: transparent;
+}
+.Perfil--body--main--form-inputGroup._birthday_{
+    margin-bottom: 27px;
+}
+.Perfil--body--main--form-inputGroup._birthday_ ._input_{
+    width: 100px !important;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: 28px;
+    position: relative;
+}
+.Perfil--body--main--form-inputGroup._birthday_ ._input_:last-child{
+    margin-right: 0;
+}
+.Perfil--body--main--form-inputGroup._birthday_ ._input_ input{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.Perfil--body--main--form-inputGroup._birthday_ ._input_::after{
+    content: "/";
+    font-size: 22px;
+    color: rgba(158, 158, 167,.55);
+    position: absolute;
+    right: -18px;
+    top: 12px;
+}
+.Perfil--body--main--form-inputGroup._birthday_ ._input_:last-child::after{
+    display: none !important;
+}
+.Perfil--body--main--form-inputGroup._birthday_ ._input_ p{
+    font-size: 13px;
+    margin-top: 6px;
+    padding-left: 7px;
+    color: rgba(158, 158, 167,.55);
+}
+.Perfil--body--main--form-inputGroup p._locked_{
+    padding: 5px 12px;
+    background-color: rgba(158, 158, 167,.07);
+    font-size: 13px;
+    display: inline-flex;
+    /* align-items: center; */
+    margin-top: 12px;
+    border-radius: 20px;
+    color: rgba(13, 12, 34,.5);
+    box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(158, 158, 167,.07);
+}
+.Perfil--body--main--form-inputGroup p._locked_ svg{
+    margin-right: 5px;
+    width: 14px;
+}
+.Perfil--body--main--form-inputSubmit input{
+    height: 45px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 13px;
+}
+._dashedBorder_{
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: rgba(158, 158, 167,.45);
+    position: relative;
+    /* border-top: 3px solid rgba(158, 158, 167,.45); */
+    display: block;
+}
+._dashedBorder_::before,._dashedBorder_::after{
+    content: "";
+    width: 4px;
+    height: 12px;
+    transform: rotate(40deg) translateY(-50%);
+    background-color: white;
+    position: absolute;
+    left: 33.333%;
+    top: 50%;
+}
+._dashedBorder_::after{
+    left: 66.666%;
+}

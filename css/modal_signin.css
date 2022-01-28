@@ -1,0 +1,300 @@
+:root{
+    --mdl_login: 400px;
+    --input_hg: 45px;
+    --btn_hg: 50px;
+}
+.capModalLogin{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    z-index: 50;
+    cursor: pointer;
+}
+.ModalLogin{
+    cursor: default;
+    width: var(--mdl_login);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 80px;
+}
+.ModalLogin h2{
+    font-size: 35px;
+    color: rgb(51,51,51);
+    margin-bottom: 35px;
+    text-align: center;
+    position: relative;
+}
+.ModalLogin h2::before{
+    content: "";
+    width: 50px;
+    height: 6px;
+    border-radius: 5px;
+    background: linear-gradient(to right,#DF00FF,#8100FF);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.ModalLogin--networks{
+    display: flex;
+    align-items: center;
+    --size: 40px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+.ModalLogin--networks li{
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,.15);
+    margin-right: 15px;
+}
+.ModalLogin--networks li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.ModalLogin--networks li svg{
+    width: 17px;
+    height: 17px;
+    color: rgb(51,51,51);
+}
+.ModalLogin>p{
+    font-size: 15px;
+    color: rgba(128, 144, 148, 0.99);
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.ModalLogin--networks form{
+    margin-bottom: 35px;
+}
+.ModalLogin-inputG{
+    margin-bottom: 25px;
+    position: relative;
+}
+.ModalLogin-inputG input,
+.ModalLogin form input[type=submit]{
+    display: block;
+    width: 100%;
+    height: var(--input_hg);
+    background-color: rgb(243, 243, 244);
+    color: rgb(51,51,51);
+    border-radius: 8px;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+}
+.ModalLogin form input[type=submit]{
+    background: linear-gradient(to right,#DF00FF,#8100FF);
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    height: var(--btn_hg);
+    text-transform: uppercase;
+    justify-content: center;
+    cursor: pointer;
+}
+.ModalLogin-inputG input[type=text]:focus,
+.ModalLogin-inputG input[type=password]:focus{
+    box-shadow: 0 0 0 4px rgba(139, 94, 205,.3);
+    background-color: #fff;
+    border-color: rgba(0,0,0,.1);
+}
+.ModalLogin--remember{
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.ModalLogin--notAccount{
+    color: rgba(128, 144, 148, 0.7);
+    margin-top: 20px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0,0,0,.05);
+}
+.ModalLogin--notAccount a{
+    margin-left: 5px;
+    color: rgba(53, 208, 247,.75);
+}
+.ModalLogin--remember input{
+    display: none;
+}
+._toggleBtn_{
+    display: inline-block;
+    --hg: 21px;
+    --marge: 3px;
+    height: var(--hg);
+    width: 40px;
+    border-radius: var(--hg);
+    position: relative;
+    background-color: rgb(207, 217, 224,.9);
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-left: 12px;
+
+}
+._toggleBtn_::before{
+    content: "";
+    display: inline-block;
+    height: calc(var(--hg) - var(--marge) * 2);
+    width: calc(var(--hg) - var(--marge) * 2);
+    border-radius: 50%;
+    position: absolute;
+    background-color: #F8FAFB;
+    top: 50%;
+    transform: translateY(-50%);
+    left: var(--marge);
+    transition: all .2s ease;
+}
+input{
+    display: none;
+}
+input:checked ~ ._toggleBtn_{
+background-color: rgba(223, 0, 255,.5);
+}
+input:checked ~ ._toggleBtn_::before{
+    left: calc(100% - var(--marge));
+    transform: translateX(-100%) translateY(-50%);
+}
+._radioCheckmark_{
+    --size: 20px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: rgb(207, 217, 224,.4);
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -8px;
+    transition: all .3s ease;
+}
+._radioCheckmark_ + label{
+    font-size: 14px;
+    line-height: 20px;
+}
+._radioCheckmark_::before{
+    content: "\2713";
+    font-weight: bold;
+    font-size: 12px;
+    color: rgba(128, 144, 148, 0.5);
+    transition: all .3s ease;
+}
+._radioCheckmark_ + label a{
+    text-decoration: underline;
+    color: #35d0f7;
+}
+input:checked ~ ._radioCheckmark_{
+    background-color: #DF00FF;
+}
+input:checked ~ ._radioCheckmark_::before{
+    color: #fff;
+}
+.ModalLogin-svg{
+    display: flex;
+    margin: auto;
+    --size: 90px;
+    width: var(--size);
+    height: var(--size);
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+.ModalLogin-svg svg{
+    width: var(--size);
+    height: var(--height);
+}
+.ModalResend--cap{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.ModalResend{
+    background-color: white;
+    margin: 20px;
+    max-height: calc(100% - 40px);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 400px;
+    min-height: 220px;
+    color: rgb(38,38,38);
+    animation: BaragattiModalShow .1s ease-out;
+}
+.ModalResend h3{
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.ModalResend_p{
+    margin: 12px 32px;
+    margin-top: 32px;
+    text-align: center;
+    text-align: center;
+}
+.ModalResend_p span{
+    padding-top: 16px;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(142,142,142);
+}
+.ModalResend--btns{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-top: 16px;
+}
+.ModalResend--btns button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 4px 8px;
+    height: 48px;
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    border-top: 1px solid rgb(219,219,219);
+}
+.ModalResend--btns button:first-child{
+    font-weight: bold;
+    color: rgb(237, 73, 86);
+}
+@-webkit-keyframes BaragattiModalShow{
+    0%{
+        opacity:0;
+        -webkit-transform:scale(1.2);
+        transform:scale(1.2);
+    }
+    to{
+        opacity:1;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="272" height="152" viewBox="0 0 272 152">
+  <defs>
+    <style>
+      .b{fill:#fff}.b,.f,.g{stroke:#3a36e4;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.c{fill:#fff493}.f,.g{fill:none}.g{stroke-dasharray:5.567 7.422}
+    </style>
+  </defs>
+  <path fill="#fef9db" d="M0 0h272v152H0z"/>
+  <path class="b" d="M27.2 17.6h55.6v82.9H27.2z"/>
+  <path class="c" d="M35.7 51.1h16.8v16.4H35.7z"/>
+  <path fill="#fff493" stroke="#3a36e4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M27.2 17.6h55.6v25.6H27.2z"/>
+  <path class="b" d="M58.4 52.1h16.8M58.4 56.9h16.8M58.4 61.7H72"/>
+  <path class="c" d="M75.2 91.1H58.4V74.7h16.8z"/>
+  <path class="b" d="M46.7 90.1h-11M52.5 85.3H35.7M52.5 80.5H35.7M52.5 75.7H35.7"/>
+  <path fill="#fff" d="M34.4 18.6h7.7v11.3h-7.7z"/>
+  <path class="b" d="M97.9 18.2h58.7v60.3H97.9z"/>
+  <path class="b" d="M106 26.3h42.8v27.1H106zM106 59.8h42.8M106 65.1h42.8M106 70.4h42.8"/>
+  <ellipse class="c" cx="143.6" cy="31.2" rx="8.3" ry="8.6"/>
+  <path class="c" d="M107 52.6V38a15.6 15.6 0 0111 .1c6 2.3 9.3 8.4 16.8 8.5 3.7 0 13-2.2 13-2.2v8.3z"/>
+  <path class="b" d="M97.9 92.3h58.7V134H97.9z"/>
+  <path class="c" d="M121.9 132.9h-23V93.5h23z"/>
+  <path class="b" d="M116.6 116.7h32.2M116.6 121.9h32.2M116.6 127.1h23.1M143.3 99.6h6v6.1h-6zM170.5 18.2h75v66.2h-75zM225.3 24.4H240M225.3 29.5h9.7"/>
+  <path class="c" d="M224.4 36.1h20.1v47.3h-20.1z"/>
+  <path class="b" d="M232.1 74.4h7.9M234.6 78.5h5.4"/>
+  <path class="c" d="M176.2 24.4h13.2v35.3h-13.2z"/>
+  <path class="b" d="M176.7 67.2h12.2M176.7 72.6h12.2M176.7 77.9h12.2"/>
+  <path class="c" d="M195.5 19.3h24v64.1h-24z"/>
+  <path class="b" d="M201.3 42.6h12.3M201.3 48h12.3M201.3 53.3h12.3"/>
+  <path class="f" d="M219.5 18.2v3"/>
+  <path class="g" d="M219.5 28.7v48.2"/>
+  <path class="f" d="M219.5 80.6v3M195.5 18.2v3"/>
+  <path class="g" d="M195.5 28.7v48.2"/>
+  <path class="f" d="M195.5 80.6v3"/>
+  <path class="b" d="M27.2 113.5h55.6V134H27.2zM170.5 99h75v35h-75zM41.5 113.5V134M55.5 113.5V134M69.5 113.5V134"/>
+  <path class="c" d="M171.5 100.1h35.2V133h-35.2zM226.9 107.6h17.6v15.7h-17.6z"/>
+  <path class="b" d="M185.9 112.5h44.3M185.9 118.5h30.9"/>
+  <path class="c" d="M42.5 114.5h11.9V133H42.5zM70.5 114.5h11.4V133H70.5z"/>
+</svg>

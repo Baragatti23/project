@@ -1,0 +1,159 @@
+.index--header{
+    box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    backdrop-filter: blur(0px);
+}
+:root{
+    --items-row: 4;
+    --width-item: 270px;
+    --heigh-item: 227px;
+}
+.Hello--greetings{
+    background-color: rgb(250,250,250);
+    padding: 70px 0 60px 0;
+    margin-top: var(--header);
+}
+h1{
+    font-size: 36px;
+    color: rgb(29, 27, 47);
+    margin-bottom: 25px;
+    line-height: 44px;
+}
+.Hello--greetings p{font-size: 16px;margin-bottom: 25px;color: rgb(34, 30, 70);line-height: 24px;}
+.Hello--greetings a, .Hello--continuWork--null a{
+    background-color: rgb(58, 54, 228);
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 36px;
+    padding: 0 12px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 4px;
+    user-select: none;
+    transition: all .3s ease;
+    min-width: 150px;
+}
+.Hello--greetings a:hover,.Hello--continuWork--null a:hover{
+    background-color: #5656FA;
+}
+.Hello--greetings a:active,.Hello--continuWork--null a:active{
+    background-color: #2811b4;
+}
+.Hello--whyToday{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.Hello--whyToday h2,.Hello--continuWork h2,.Hello--for2 h2{
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.Hello--whyToday a{
+    height: var(--heigh-item);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.1);
+    transition: all .3s ease;
+}
+.Hello--whyToday a:hover{
+    transform: scale(1.025);
+}
+.Hello--whyToday a:focus{
+    box-shadow: 0 0 0 2px #acc3fd;
+}
+.Hello--whyToday a figure{
+    height: 121px;
+    background-color: #eaeaea;
+    overflow: hidden;
+}
+.Hello--whyToday a figure img{
+    width: 100%;
+    min-height: 100%;
+}
+.Hello--whyToday a footer{
+    height: calc(100% - 121px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    font-weight: bold;
+    color: rgb(29, 27, 47);
+    font-size: 20px;
+}
+.Hello--whyToday ._grid_{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.Hello--continuWork{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Hello--continuWork--null{
+    width: 100%;
+    padding: 40px 20px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Hello--continuWork--null>div{
+    width: 70%;
+    text-align: center;
+}
+.Hello--continuWork--null p{
+    color: rgb(34, 30, 70);
+    font-size: 14px;
+    margin-top: 16px;
+}
+.Hello--continuWork--null a{
+    margin-top: 25px;
+}
+.Hello--for2{
+    margin-top: 40px;
+    --img-height: 180px;
+    --item_line: 5;
+    margin-bottom: 40px;
+}
+._flex_{
+    display: grid;
+    grid-template-columns: repeat(var(--item_line),1fr);
+    gap: 25px;
+}
+.Hello--for2 ._flex_>a figure{
+    transition: all .3s ease;
+    max-height: var(--img-height);
+    min-height: 160px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f1F1F1;
+    margin-bottom: 20px;
+}
+.Hello--for2 ._flex_>a figure img{
+    width: 100%;
+}
+.Hello--for2 ._flex_>a footer{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.Hello--for2 ._flex_>a footer span{
+    font-size: 12px;
+    color: rgb(157, 162, 173);
+    opacity: 0;
+    transition: all .3s ease;
+    display: block;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 7px;
+}
+.Hello--for2 ._flex_>a:hover figure{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+}
+.Hello--for2 ._flex_>a:hover footer span{
+    opacity: 1;
+}

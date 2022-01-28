@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li {
+list-style: none;
+}
+input,a,button{
+    outline: none;
+}
+:root{
+    --size-wrapper:1100px;
+    --header: 60px;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+path{
+    fill:currentColor;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+._wrapper_{
+    width: var(--size-wrapper);
+    margin: auto;
+    position: relative;
+}

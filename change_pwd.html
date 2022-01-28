@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se Connecter sur votre compte</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/modal_signin.css">
+    <style>
+        :root{
+            --mdl_login: 450px;
+            --input_hg: 45px;
+            --btn_hg: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ModalLogin">
+        <div class="ModalLogin-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <circle cx="370" cy="346" r="20" />
+                <path d="M460,362c11.046,0,20-8.954,20-20v-74c0-44.112-35.888-80-80-80h-24.037v-70.534C375.963,52.695,322.131,0,255.963,0     s-120,52.695-120,117.466V188H112c-44.112,0-80,35.888-80,80v164c0,44.112,35.888,80,80,80h288c44.112,0,80-35.888,80-80     c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20c0,22.056-17.944,40-40,40H112c-22.056,0-40-17.944-40-40V268     c0-22.056,17.944-40,40-40h288c22.056,0,40,17.944,40,40v74C440,353.046,448.954,362,460,362z M335.963,188h-160v-70.534     c0-42.715,35.888-77.466,80-77.466s80,34.751,80,77.466V188z" />
+                <circle cx="219" cy="346" r="20" />
+                <circle cx="144" cy="346" r="20" />
+                <circle cx="294" cy="346" r="20" />
+            </svg>
+        </div>
+        <h2>Changer le mot de passe...</h2>
+        <ul class="ModalLogin--networks">
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210">
+                        <path d="M0,105C0,47.103,47.103,0,105,0c23.383,0,45.515,7.523,64.004,21.756l-24.4,31.696C133.172,44.652,119.477,40,105,40  c-35.841,0-65,29.159-65,65s29.159,65,65,65c28.867,0,53.398-18.913,61.852-45H105V85h105v20c0,57.897-47.103,105-105,105  S0,162.897,0,105z">
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <p>Saisissez votre nouveau mot de passe</p>
+        <form action="">
+            <div class="ModalLogin-inputG">
+                <input type="text" placeholder="Nouveau mot de passe">
+            </div>
+            <div class="ModalLogin-inputG">
+                <input type="text" placeholder="Repeter mot de passe">
+            </div>
+            <input type="submit" value="Se connecter">
+        </form>
+        <div class="ModalLogin--notAccount" style="line-height: 25px;">
+            Vous vous rappelez déjà de votre mot de passe?
+            <a href="signin.html" style="display: inline-block;text-decoration: underline;">Se Connecter</a>
+        </div>
+    </div>
+</body>
+</html>

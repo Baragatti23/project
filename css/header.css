@@ -1,0 +1,356 @@
+.index--header{
+    width: 100%;
+    height: var(--header);
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    left: 0;
+    transition: all .3s ease;
+}
+.index--header._translate_{
+    box-shadow: 0 0 2px rgba(0,0,0,.1);
+    background-color: rgba(255,255,255,.75);
+    backdrop-filter: blur(5px);
+    /* border-bottom: 1px solid rgba(0,0,0,.05); */
+}
+.index--header._translate_ .index--header--menu > a{
+    background-color: transparent;
+}
+.index--header-logo{
+    width: 120px;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+}
+._cercleFloat_{
+    display: block;
+    --size: 580px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    border: 50px solid #ECF6FA;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transform: translateX(-50%) translateY(-50%);
+}
+.index--header ._wrapper_{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    
+}
+.index--header--menu,
+.index--header--nav{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 0;
+}
+.index--header--nav{
+    position: relative;
+    /* top: 3px; */
+}
+.index--header--menu li,
+.index--header--nav a{
+    margin-left:30px ;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+}
+.index--header--nav a::after{
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #333;
+    border-bottom-right-radius: 2px;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    margin-left: 8px;
+    position: relative;
+    top: -2px;
+}
+.index--header--nav a.services{
+    padding-left: 23px;
+}
+.index--header--nav a.services::before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #222;
+    display: inline-block;
+    box-shadow: 6px 0 0 0 #222, 12px 0 0 0 #222;
+    left: 0;
+    position: absolute;
+}
+.index--header--menu li._actif_{
+    color: #25DEA4;
+    font-weight: bold;
+    position: relative;
+}
+.index--header--menu li._actif_::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #25DEA4;
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.index--header--menu li._languages_{
+    font-weight: normal;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.index--header--menu li._languages_ svg{
+    width: 17px;
+}
+.index--header--menu li._languages_ > a span{
+    border-right: 1px solid rgba(0,0,0,.1);
+    position: relative;
+    top: -3px;
+    padding: 2px 0;
+    padding-right: 20px;
+    margin-left: 7px;
+}
+.index--header--menu li._languages_ > a span::after{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #333;
+    border-bottom-right-radius: 2px;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    margin-left: 8px;
+    position: relative;
+    top: -2px;
+}
+.index--header--menu li svg{
+    width: 24px;
+}
+.index--header--menu li ._badge_{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    padding: 0px 5px;
+    border-radius: 12px;
+    background-color: rgb(77, 87, 102);
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: -7px;
+    margin-left: 5px;
+}
+.index--header--menu>a{
+    min-width: 110px;
+    padding: 15px;
+    height: 40px;
+    border: 2px solid #111;
+    color: #111;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    transition: all .3s ease;
+    background-color: white;
+}
+.index--header--menu>a svg{
+    width: 16px;
+    margin-right: 8px;
+}
+
+.index--header--user{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.index--header--menu-name{
+    font-size: 13px !important;
+    color: rgb(90,95,106) !important;
+    font-weight: normal !important;
+    text-transform: none !important;
+    cursor: pointer;
+}
+.index--header--menu-img{
+    --size: 30px;
+    height: var(--size);
+    background-color: purple;
+    width: var(--size);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #15ccff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.index--header--menu-img::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: lime;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 0 4px white;
+}
+.index--header--menu-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.index--header--notifs{
+    color: rgb(77, 87, 102);
+}
+.index--header--panelLang{
+    width: 200px;
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    top: calc(var(--header) - 10px);
+    background-color: white;
+    transform: translateX(-40%);
+    box-shadow: 0 0 5px rgba(0,0,0,.05),8px 12px 18px rgba(0,0,0,.025);
+    border-radius: 8px;
+    display: none;
+}
+.index--header--menu li._languages_:hover .index--header--panelLang{
+    display: block;
+}
+.index--header--panelLang::before{
+    content: "";
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-45%,-90%);
+}
+.index--header--panelLang li{
+    margin: 0;
+    margin-bottom: 5px;
+    color: rgb(44, 125, 250);
+    width: 100%;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 13px;
+    /* border-radius: 7px; */
+    color: rgba(77, 87, 102,.6);
+    transition: all .3s ease;
+}
+.index--header--panelLang li:hover{
+    background-color: rgba(77, 87, 102,.035);
+}
+.index--header--panelLang li a{
+    display: block;
+    width: 100%;
+    padding: 8px 25px;
+    position: relative;
+}
+.index--header--panelLang li._active_ a b::after{
+    margin-left: 9px;
+    display: inline-block;
+    content: "\2713";
+    font-size: 14px;
+    font-weight: bold;
+    color: currentColor;
+}
+.index--header--panelLang li b{
+    margin-bottom: 5px;
+    display: block;
+    color: rgba(77, 87, 102,.95);;
+}
+.index--header--panelLang li._active_{
+    color: rgba(76, 142, 240,.65);
+}
+.index--header--panelLang li._active_ b{
+    color: rgb(76, 142, 240);
+}
+.index--header--user--menu{
+    position: absolute;
+    top: calc(var(--header) - 15px);
+    right: 0;
+    left: auto;
+    z-index: 2;
+    width: 192px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    visibility: hidden;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    transform: translateY(-6px);
+}
+._flex_{
+    display: flex;
+}
+._hidden_{
+    display: none !important;
+}
+.index--header--user--menu::before{
+    content: "";
+    display: inline-block;
+    width: 50%;
+    height: 20px;
+    background-color: transparent;
+    top: 2px;
+    transform: translateY(-100%);
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+.index--header--user--menu:hover,
+.index--header--user:hover .index--header--user--menu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.index--header--user--menu li{
+    margin-left: 0;
+    font-weight: normal;
+    text-transform: none;
+}
+.index--header--user--menu li:last-child{
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(0,0,0,.035);
+}
+.index--header--user--menu a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    color: rgba(77, 87, 102,.95);
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .3px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.index--header--user--menu a:hover{
+    background-color: #f6f7f8;
+    color: #15ccff;
+}
